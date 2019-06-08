@@ -13,8 +13,13 @@
 		62A2D70722AAF91700D493CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D70622AAF91700D493CF /* Assets.xcassets */; };
 		62A2D70A22AAF91700D493CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D70822AAF91700D493CF /* LaunchScreen.storyboard */; };
 		62A2D70D22AAF91700D493CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A2D70C22AAF91700D493CF /* main.m */; };
-		62A2D71722AAF91700D493CF /* Finger_PaintingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A2D71622AAF91700D493CF /* Finger_PaintingTests.m */; };
-		62A2D72222AAF91700D493CF /* Finger_PaintingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A2D72122AAF91700D493CF /* Finger_PaintingUITests.m */; };
+		62A2D73922AB2DB800D493CF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A2D73822AB2DB800D493CF /* SettingsViewController.m */; };
+		62A2D74022AB3D6900D493CF /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D73F22AB3C5C00D493CF /* Black.png */; };
+		62A2D74122AB3D6F00D493CF /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D73C22AB3C5B00D493CF /* Blue.png */; };
+		62A2D74222AB3D6F00D493CF /* Eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D73B22AB3C5B00D493CF /* Eraser.png */; };
+		62A2D74322AB3D6F00D493CF /* Grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D73D22AB3C5C00D493CF /* Grey.png */; };
+		62A2D74422AB3D6F00D493CF /* LightGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D73E22AB3C5C00D493CF /* LightGreen.png */; };
+		62A2D74622AB3D9500D493CF /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A2D74522AB3D9400D493CF /* Red.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +51,15 @@
 		62A2D70B22AAF91700D493CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62A2D70C22AAF91700D493CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62A2D71222AAF91700D493CF /* Finger-PaintingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finger-PaintingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62A2D71622AAF91700D493CF /* Finger_PaintingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Finger_PaintingTests.m; sourceTree = "<group>"; };
-		62A2D71822AAF91700D493CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62A2D71D22AAF91700D493CF /* Finger-PaintingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finger-PaintingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62A2D72122AAF91700D493CF /* Finger_PaintingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Finger_PaintingUITests.m; sourceTree = "<group>"; };
-		62A2D72322AAF91700D493CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62A2D73722AB2DB800D493CF /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		62A2D73822AB2DB800D493CF /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		62A2D73B22AB3C5B00D493CF /* Eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eraser.png; sourceTree = "<group>"; };
+		62A2D73C22AB3C5B00D493CF /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		62A2D73D22AB3C5C00D493CF /* Grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grey.png; sourceTree = "<group>"; };
+		62A2D73E22AB3C5C00D493CF /* LightGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightGreen.png; sourceTree = "<group>"; };
+		62A2D73F22AB3C5C00D493CF /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
+		62A2D74522AB3D9400D493CF /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				62A2D6FC22AAF91600D493CF /* Finger-Painting */,
-				62A2D71522AAF91700D493CF /* Finger-PaintingTests */,
-				62A2D72022AAF91700D493CF /* Finger-PaintingUITests */,
 				62A2D6FB22AAF91600D493CF /* Products */,
+				62A2D73222AB0A2E00D493CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +109,18 @@
 		62A2D6FC22AAF91600D493CF /* Finger-Painting */ = {
 			isa = PBXGroup;
 			children = (
+				62A2D74522AB3D9400D493CF /* Red.png */,
+				62A2D73F22AB3C5C00D493CF /* Black.png */,
+				62A2D73C22AB3C5B00D493CF /* Blue.png */,
+				62A2D73B22AB3C5B00D493CF /* Eraser.png */,
+				62A2D73D22AB3C5C00D493CF /* Grey.png */,
+				62A2D73E22AB3C5C00D493CF /* LightGreen.png */,
 				62A2D6FD22AAF91600D493CF /* AppDelegate.h */,
 				62A2D6FE22AAF91600D493CF /* AppDelegate.m */,
 				62A2D70022AAF91600D493CF /* ViewController.h */,
 				62A2D70122AAF91600D493CF /* ViewController.m */,
+				62A2D73722AB2DB800D493CF /* SettingsViewController.h */,
+				62A2D73822AB2DB800D493CF /* SettingsViewController.m */,
 				62A2D70322AAF91600D493CF /* Main.storyboard */,
 				62A2D70622AAF91700D493CF /* Assets.xcassets */,
 				62A2D70822AAF91700D493CF /* LaunchScreen.storyboard */,
@@ -114,22 +130,11 @@
 			path = "Finger-Painting";
 			sourceTree = "<group>";
 		};
-		62A2D71522AAF91700D493CF /* Finger-PaintingTests */ = {
+		62A2D73222AB0A2E00D493CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62A2D71622AAF91700D493CF /* Finger_PaintingTests.m */,
-				62A2D71822AAF91700D493CF /* Info.plist */,
 			);
-			path = "Finger-PaintingTests";
-			sourceTree = "<group>";
-		};
-		62A2D72022AAF91700D493CF /* Finger-PaintingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				62A2D72122AAF91700D493CF /* Finger_PaintingUITests.m */,
-				62A2D72322AAF91700D493CF /* Info.plist */,
-			);
-			path = "Finger-PaintingUITests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62A2D70A22AAF91700D493CF /* LaunchScreen.storyboard in Resources */,
+				62A2D74222AB3D6F00D493CF /* Eraser.png in Resources */,
+				62A2D74422AB3D6F00D493CF /* LightGreen.png in Resources */,
+				62A2D74022AB3D6900D493CF /* Black.png in Resources */,
+				62A2D74122AB3D6F00D493CF /* Blue.png in Resources */,
 				62A2D70722AAF91700D493CF /* Assets.xcassets in Resources */,
+				62A2D74622AB3D9500D493CF /* Red.png in Resources */,
 				62A2D70522AAF91600D493CF /* Main.storyboard in Resources */,
+				62A2D74322AB3D6F00D493CF /* Grey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +275,7 @@
 			files = (
 				62A2D70222AAF91600D493CF /* ViewController.m in Sources */,
 				62A2D70D22AAF91700D493CF /* main.m in Sources */,
+				62A2D73922AB2DB800D493CF /* SettingsViewController.m in Sources */,
 				62A2D6FF22AAF91600D493CF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62A2D71722AAF91700D493CF /* Finger_PaintingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62A2D72222AAF91700D493CF /* Finger_PaintingUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

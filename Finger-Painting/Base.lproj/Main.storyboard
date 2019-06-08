@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,134 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psK-fl-X0y" userLabel="mainImage">
+                                <rect key="frame" x="-2" y="0.0" width="320.00000000000011" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mfq-4J-cek" userLabel="tempDrawImage">
+                                <rect key="frame" x="-2" y="0.0" width="320.00000000000011" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9s-Sc-AFj">
+                                <rect key="frame" x="12" y="481" width="28" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C9s-Sc-AFj" secondAttribute="height" multiplier="28:185" id="EUA-B8-Gmk"/>
+                                    <constraint firstAttribute="height" constant="185" id="GR6-d9-JCw"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Black.png"/>
+                                <connections>
+                                    <action selector="pencilPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkh-4X-b66"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paw-P2-nCL">
+                                <rect key="frame" x="48" y="481" width="28" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="Beg-4t-N32"/>
+                                    <constraint firstAttribute="width" secondItem="paw-P2-nCL" secondAttribute="height" multiplier="28:185" id="ix9-wu-YIh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Red.png"/>
+                                <connections>
+                                    <action selector="pencilPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2p-kX-FGq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-iy-pxu">
+                                <rect key="frame" x="83" y="481" width="28" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="C8G-1C-eoF"/>
+                                    <constraint firstAttribute="width" secondItem="Pye-iy-pxu" secondAttribute="height" multiplier="28:185" id="omX-lq-DJy"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Blue.png"/>
+                                <connections>
+                                    <action selector="pencilPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLd-eE-j8L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfg-8H-rnb">
+                                <rect key="frame" x="119" y="481" width="28" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rfg-8H-rnb" secondAttribute="height" multiplier="28:185" id="0Jp-Yb-9cy"/>
+                                    <constraint firstAttribute="height" constant="185" id="4kp-jG-Gnn"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="LightGreen.png"/>
+                                <connections>
+                                    <action selector="pencilPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IV1-23-n7Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZo-qe-Dvs">
+                                <rect key="frame" x="155" y="481" width="28" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="r9w-kU-7Y7"/>
+                                    <constraint firstAttribute="width" secondItem="LZo-qe-Dvs" secondAttribute="height" multiplier="28:185" id="txP-uH-3ia"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Grey.png"/>
+                                <connections>
+                                    <action selector="pencilPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r0V-ez-lEO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNR-dS-lwp">
+                                <rect key="frame" x="191" y="481" width="28" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WNR-dS-lwp" secondAttribute="height" multiplier="28:87" id="APG-Th-w6m"/>
+                                    <constraint firstAttribute="height" constant="87" id="Ulc-pU-qXF"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Eraser.png"/>
+                                <connections>
+                                    <action selector="eraserPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJJ-0k-cGC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="paw-P2-nCL" firstAttribute="top" secondItem="C9s-Sc-AFj" secondAttribute="top" id="5P3-UU-URB"/>
+                            <constraint firstItem="LZo-qe-Dvs" firstAttribute="top" secondItem="rfg-8H-rnb" secondAttribute="top" id="9Tt-DH-aGq"/>
+                            <constraint firstItem="WNR-dS-lwp" firstAttribute="top" secondItem="LZo-qe-Dvs" secondAttribute="top" id="BHo-tg-zAB"/>
+                            <constraint firstItem="WNR-dS-lwp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-87" id="CUf-w5-5ZE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="C9s-Sc-AFj" secondAttribute="trailing" constant="-40" id="K6I-dQ-UzQ"/>
+                            <constraint firstItem="Pye-iy-pxu" firstAttribute="top" secondItem="paw-P2-nCL" secondAttribute="top" id="LAa-kl-lfx"/>
+                            <constraint firstItem="paw-P2-nCL" firstAttribute="leading" secondItem="C9s-Sc-AFj" secondAttribute="trailing" constant="8" id="VZl-8o-FMY"/>
+                            <constraint firstItem="WNR-dS-lwp" firstAttribute="leading" secondItem="LZo-qe-Dvs" secondAttribute="trailing" constant="8" id="Vca-5F-a05"/>
+                            <constraint firstItem="LZo-qe-Dvs" firstAttribute="leading" secondItem="rfg-8H-rnb" secondAttribute="trailing" constant="8" id="e3g-bC-Qjx"/>
+                            <constraint firstItem="Pye-iy-pxu" firstAttribute="leading" secondItem="paw-P2-nCL" secondAttribute="trailing" constant="7" id="lW0-6s-k3b"/>
+                            <constraint firstItem="rfg-8H-rnb" firstAttribute="leading" secondItem="Pye-iy-pxu" secondAttribute="trailing" constant="8" id="rh1-Uw-dRg"/>
+                            <constraint firstItem="rfg-8H-rnb" firstAttribute="top" secondItem="Pye-iy-pxu" secondAttribute="top" id="vqp-G5-efZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mainImage" destination="psK-fl-X0y" id="Cw3-5R-nQA"/>
+                        <outlet property="tempDrawImage" destination="Mfq-4J-cek" id="TSO-4S-pND"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52.5" y="20.070422535211268"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="0GK-tq-2Tv">
+            <objects>
+                <viewController id="SER-hS-KH7" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SPU-jD-mWf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SpG-qH-PZC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vl-ld-4DD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.10144927536237" y="17.410714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Black.png" width="53" height="332"/>
+        <image name="Blue.png" width="53" height="332"/>
+        <image name="Eraser.png" width="55" height="167"/>
+        <image name="Grey.png" width="53" height="332"/>
+        <image name="LightGreen.png" width="53" height="332"/>
+        <image name="Red.png" width="53" height="332"/>
+    </resources>
 </document>
